@@ -1,0 +1,17 @@
+*.pdf
+!presentation_mit/*.pdf
+*.dvi
+*.ps
+*.log
+*.aux
+*.tar.gz
+*.toc
+*.vrb
+*.out
+*.nav
+*.fls
+*.snm
+*.xdv
+*.fbd_latexmk
+*.gz
+

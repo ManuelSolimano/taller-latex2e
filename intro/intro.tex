@@ -1,0 +1,90 @@
+% !TEX engine = xelatex
+
+\documentclass[xetex]{beamer}
+\usepackage{xltxtra}
+\usepackage[twitter]{xelatexemoji}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{url}
+\usepackage{listings}
+\usepackage[spanish, mexico]{babel}
+% \mode<presentation>
+% {
+%   \usetheme{Warsaw}
+%   % or ...
+%
+%   \setbeamercovered{transparent}
+%   % or whatever (possibly just delete it)
+% }
+
+\title{Mini-taller de tipografía digital}
+
+\subtitle{Introducción a \LaTeXe}
+
+\author{Manuel Solimano\inst{1} \\ \url{masolimano@uc.cl}}
+% - Give the names in the same order as the appear in the paper.
+% - Use the \inst{?} command only if the authors have different
+%   affiliation.
+
+\institute
+{
+  \inst{1}%
+  Facultad de Física\\
+  Pontificia Universidad Católica de Chile
+}
+% - Use the \inst command only if there are several affiliations.
+% - Keep it simple, no one is interested in your street address.
+
+\date{\today}
+% - Either use conference name or its abbreviation.
+% - Not really informative to the audience, more for people (including
+%   yourself) who are reading the slides online
+
+
+
+% If you have a file called "university-logo-filename.xxx", where xxx
+% is a graphic format that can be processed by latex or pdflatex,
+% resp., then you can add a logo as follows:
+
+% \pgfdeclareimage[height=0.5cm]{university-logo}{logo.pdf}
+% \logo{\pgfuseimage{university-logo}}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}{Contenidos}
+  \tableofcontents
+  % You might wish to add the option [pausesections]
+\end{frame}
+
+\section{¿Qué es \TeX?}
+\begin{frame}{Preámbulo histórico}
+\begin{itemize}
+    \item \TeX~es un sofisticado sistema de tipografía digital basado en lenguaje de marcas 💻
+    \item Desarrollado por Donald Knuth en 1978 👴
+    \item Produce documentos de alta calidad con excelente soporte para fórmulas matemáticas 📝
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+  \begin{figure}
+    \centering
+    \lstset{language=TeX,frame=single}
+   \scriptsize
+    \lstinputlisting{code/math.tex}
+ \caption{Ejemplo de código \TeX.  \emph{Fuente: The Lone \TeX{}nician.}}
+    \label{fig:texcode}
+  \end{figure}
+\end{frame}
+
+\begin{frame}{Pero era un infierno... 😵}
+    Entonces Leslie Lamport crea \LaTeX
+    \begin{itemize}
+        \item Mucho más fácil de usar
+    \end{itemize}
+\end{frame}
+
+\end{document}

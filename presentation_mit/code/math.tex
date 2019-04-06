@@ -1,0 +1,21 @@
+\newif\ifFPD@overflow
+\newdimen\FBD@denom
+\def\fpdivide#1#2{%
+  \FPD@overflowfalse
+  \ifdim\AbsValD#2<1\p@
+    \begingroup\FBD@denom\ifdim#2<\z@-\fi5000#2%
+    \let\next\@empty
+    \ifdim\AbsValD#1>\FBD@denom
+      \def\next{%
+        \FPD@overflowtrue
+        \debug2{Overflow dividing \the#1 by \the#2 -> inf}%
+        #1=5000\p@}%
+    \fi
+    \ifdim\AbsValD#2<.001\p@\ifdim\AbsValD#2<.001\p@
+      \def\next{%
+        \FPD@overflowtrue
+        \debug2{Overflow dividing \the#1 by \the#2 -> 0}%
+        #1=0\p@}%
+    \fi\fi
+    \expandafter\endgroup\next
+  \fi

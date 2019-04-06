@@ -1,0 +1,19 @@
+Greetings!
+
+This presentation is licensed under the Creative Commons
+Attribution-Share Alike 3.0 United States license.  Please feel free
+to redistribute it so long as this notice and all files included with
+the presentation remain intact.
+
+To compile this presentation, type
+
+  pdflatex presentation.tex
+  pdflatex presentation.tex
+
+at a shell prompt.  Note that you must use pdflatex, not latex, as the
+presentation uses Beamer, and that you must run pdflatex twice.
+Additionally, all files associated with the presentation must remain
+in their current locations relative to presentation.tex; otherwise,
+the presentation will fail to compile.
+
+Happy LaTeXing!
